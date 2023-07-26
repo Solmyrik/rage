@@ -1,0 +1,30 @@
+html {
+  scroll-behavior: smooth;
+}
+// resolution
+$pc: 1630px;
+$tablet: 991.98px;
+$mob: 767.98px;
+$mobSmall: 479.98px;
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+
+//colors
+$orange: #f69b34;
+$blue: #3a62d7;
+$white: #ffffff;
+$black: #000000;
+$gray: #a5a19e;
+$light: #f9fafc;
+$light-blue: #bbcef2;
+
+.ibg {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+
+  img {
+    display: none;
+  }
+}

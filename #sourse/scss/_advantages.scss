@@ -1,0 +1,119 @@
+.advantages {
+  padding: 80px 0px 0px 0px;
+  position: relative;
+  @media (max-width: $tablet) {
+    padding: 40px 0px;
+  }
+  &__decor {
+    position: absolute;
+    left: -10px;
+    top: 135px;
+    img {
+      width: 400px;
+      @media (max-width: $tablet) {
+        width: 350px;
+      }
+    }
+  }
+
+  &__container {
+    position: relative;
+    z-index: 2;
+  }
+
+  &__title {
+    font-size: 58.1px;
+    line-height: 1.2;
+    font-weight: 600;
+    color: #000104;
+    margin-bottom: 100px;
+    @media (max-width: $tablet) {
+      font-size: 35px;
+      margin-bottom: 50px;
+    }
+  }
+
+  &__body {
+    display: flex;
+    @media (max-width: $tablet) {
+      flex-direction: column;
+    }
+  }
+
+  &__column {
+    flex: 0 1 50%;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 86px;
+    gap: 20px;
+    @media (max-width: $tablet) {
+      flex-direction: column;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+  }
+
+  &__icon {
+    img {
+      width: 84px;
+      height: 84px;
+    }
+  }
+  &__bigitem {
+    margin-bottom: 50px;
+    @media (max-width: $tablet) {
+      margin-bottom: 40px;
+    }
+  }
+  &__line {
+    margin-left: 38px;
+    margin-top: 20px;
+    width: 8px;
+    height: 172px;
+    background-color: $orange;
+    @media (max-width: $tablet) {
+      display: none;
+    }
+  }
+  &__top {
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    @media (max-width: $tablet) {
+      flex-direction: column;
+    }
+  }
+  &__bottom {
+    gap: 20px;
+    display: flex;
+  }
+
+  &__name {
+    font-size: 28px;
+    line-height: 1.2;
+    font-weight: 500;
+    color: #000000;
+    @media (max-width: 1439px) {
+      font-size: 24px;
+    }
+    @media (max-width: $tablet) {
+      font-size: 20px;
+    }
+  }
+
+  &__text {
+    margin-top: 20px;
+    max-width: 605px;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 31px;
+    @media (max-width: $tablet) {
+      font-size: 16px;
+      line-height: 130%;
+    }
+  }
+}

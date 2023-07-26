@@ -1,0 +1,60 @@
+.header {
+  height: 140px;
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    @media (max-width: $tablet) {
+      flex-direction: column;
+      padding-top: 10px;
+    }
+  }
+
+  &__logo {
+    img {
+      width: 430px;
+      @media (max-width: $tablet) {
+        width: 250px;
+      }
+    }
+  }
+
+  &__socials {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  &__social {
+    transition: opacity 0.3s;
+    img {
+      width: 40px;
+      @media (max-width: $tablet) {
+        width: 30px;
+      }
+    }
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+
+  &__button {
+    font-family: Montserrat;
+    font-size: 30.3px;
+    line-height: 1.2;
+    font-weight: 600;
+    color: #ffffff;
+    background-color: #f5901e;
+    padding: 10px 17px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    &:hover {
+      background-color: #c6710f;
+    }
+    @media (max-width: $tablet) {
+      font-size: 22px;
+    }
+  }
+}
