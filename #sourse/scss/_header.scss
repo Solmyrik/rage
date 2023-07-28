@@ -13,7 +13,7 @@
 
   &__logo {
     img {
-      width: 430px;
+      width: 350px;
       @media (max-width: $tablet) {
         width: 250px;
       }
@@ -29,7 +29,7 @@
   &__social {
     transition: opacity 0.3s;
     img {
-      width: 40px;
+      width: 30px;
       @media (max-width: $tablet) {
         width: 30px;
       }
@@ -41,7 +41,7 @@
 
   &__button {
     font-family: Montserrat;
-    font-size: 30.3px;
+    font-size: 25.3px;
     line-height: 1.2;
     font-weight: 600;
     color: #ffffff;
