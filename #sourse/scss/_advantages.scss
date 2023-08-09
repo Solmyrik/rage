@@ -71,9 +71,9 @@
   }
   &__line {
     margin-left: 38px;
-    margin-top: 20px;
-    width: 8px;
-    height: 172px;
+    margin-top: 27px;
+    flex: 0 0 6px;
+    height: 152px;
     background-color: $orange;
     @media (max-width: $tablet) {
       display: none;
@@ -90,6 +90,7 @@
   &__bottom {
     gap: 20px;
     display: flex;
+    align-items: start;
   }
 
   &__name {

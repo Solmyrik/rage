@@ -9,6 +9,12 @@ $mobSmall: 479.98px;
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
 
+@font-face {
+  font-family: 'Montserrat-Medium';
+  src: local('☺'), url('../fonts/Montserrat-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
 //colors
 $orange: #f69b34;
 $blue: #3a62d7;

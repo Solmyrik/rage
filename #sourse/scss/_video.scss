@@ -1,9 +1,12 @@
 .video {
   position: relative;
   padding-bottom: 150px;
-  margin-bottom: 100px;
+  // margin-bottom: 100px;
+  @media (max-width: $mob) {
+    padding-bottom: 50px;
+  }
   &__bg {
-    height: 900px;
+    height: 700px;
     position: relative;
     @media (max-width: $tablet) {
       height: 600px;
@@ -18,11 +21,12 @@
     align-items: center;
     gap: 30px;
     position: absolute;
+    justify-content: center;
     left: 50%;
-    top: 200px;
+    top: 150px;
     transform: translate(-50%, 0);
-    padding: 30px 70px;
-    width: 930px;
+    padding: 30px 50px;
+    width: 830px;
     &::before {
       content: '';
       position: absolute;
@@ -39,7 +43,7 @@
     }
     @media (max-width: $mob) {
       gap: 10px;
-      top: 130px;
+      top: 90px;
     }
   }
 
@@ -47,7 +51,7 @@
     position: relative;
     z-index: 2;
     img {
-      width: 344px;
+      width: 300px;
       @media (max-width: $tablet) {
         width: 244px;
       }
@@ -60,7 +64,7 @@
   &__title {
     position: relative;
     z-index: 2;
-    font-size: 77.5px;
+    font-size: 67.5px;
     line-height: 1.2;
     font-weight: 600;
     color: #ffffff;
@@ -74,25 +78,23 @@
   }
 
   &__player {
-    width: 1285px;
-    height: 724px;
-    @media (max-width: 1339px) {
-      width: 90%;
-    }
+    width: 830px;
+    height: 500px;
     iframe {
       width: 100%;
       height: 100%;
     }
     position: absolute;
-    top: 353px;
+    top: 291px;
     left: 50%;
     transform: translate(-50%, 0);
     @media (max-width: $tablet) {
-      top: 315px;
+      width: 90%;
+      top: 265px;
       height: 424px;
     }
     @media (max-width: $mob) {
-      top: 223px;
+      top: 183px;
       height: 250px;
     }
   }
