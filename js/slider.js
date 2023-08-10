@@ -13,6 +13,18 @@ new Swiper('.slider__block-1', {
       slidesPerView: 3,
     },
   },
+  on: {
+    slideChange: function (swiper) {
+      // используется параметр loop true (см. https://swiperjs.com/swiper-api#prop-swiper-realIndex)
+      let activeIndex = swiper.realIndex;
+      const prevCurrent = document.querySelector('.slider-prew-1');
+      if (activeIndex === 0) {
+        prevCurrent.style.display = 'none';
+      } else {
+        prevCurrent.style.display = 'block';
+      }
+    },
+  },
   //   spaceBetween: 30,
 });
 new Swiper('.slider__block-2', {
